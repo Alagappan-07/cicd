@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alagappan | Cybersecurity Portfolio</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat fixed;
+        backdrop-filter: blur(5px);
+        color: #fff;
+    }
+
+    /* Glass Card */
+    .glass {
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 18px;
+        padding: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    header {
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin: 20px 0;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+    nav a:hover {
+        color: #00eaff;
+    }
+
+    section {
+        padding: 60px 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    h1, h2 {
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .skills-grid, .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .icon {
+        width: 28px;
+        vertical-align: middle;
+        margin-right: 8px;
+        fill: #00eaff;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+        opacity: 0.8;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 22px;
+        background: rgba(255,255,255,0.2);
+        border-radius: 12px;
+        color:white;
+        text-decoration:none;
+        border: 1px solid rgba(255,255,255,0.2);
+        transition:0.3s;
+    }
+    .btn:hover {
+        background: rgba(0, 255, 255, 0.3);
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="glass">
+        <h1>👋 Hi, I'm <span style="color:#00eaff;">Alagappan</span></h1>
+        <h2>Cybersecurity Graduate | Ethical Hacker | Network Defender</h2>
+        <p>I specialize in securing systems, analyzing vulnerabilities, and building safe digital environments.</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="#" class="btn">Download CV</a>
+    </div>
+</header>
+
+<section id="about">
+    <div class="glass">
+        <h2>About Me</h2>
+        <p>
+            I’m a passionate Cybersecurity Graduate dedicated to protecting digital systems and solving
+            complex security challenges. I am highly skilled in vulnerability assessment, penetration testing,
+            malware analysis, networking, and digital forensics. I love exploring new technologies and staying 
+            updated with the latest cyber threats and defense methodologies.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="glass">
+        <h2>Skills & Tools</h2>
+
+        <div class="skills-grid">
+
+            <div class="glass">
+                <h3><svg class="icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Cybersecurity</h3>
+                <p>Penetration Testing, Vulnerability Assessment, Threat Modelling</p>
+            </div>
+
+            <div class="glass">
+                <h3><svg class="icon" viewBox="0 0 24 24"><path d="M3 3h18v2H3V3m0 7h18v2H3v-2m0 7h18v2H3v-2z"/></svg>Tools</h3>
+                <p>Kali Linux, Metasploit, Burp Suite, Nessus, Wireshark</p>
+            </div>
+
+            <div class="glass">
+                <h3><svg class="icon" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>Networking</h3>
+                <p>TCP/IP, Firewalls, IDS/IPS, Routing, Switching</p>
+            </div>
+
+            <div class="glass">
+                <h3><svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4
+                 v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>Soft Skills</h3>
+                <p>Problem Solving, Teamwork, Communication, Research</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="glass">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="glass">
+                <h3>🔐 Vulnerability Scanner</h3>
+                <p>Developed a Python-based scanner to identify vulnerabilities in web applications.</p>
+            </div>
+
+            <div class="glass">
+                <h3>🛡 Firewall Configuration Lab</h3>
+                <p>Configured pfSense firewall with NAT, VLANs & advanced rules for enterprise security.</p>
+            </div>
+
+            <div class="glass">
+                <h3>🐍 Malware Analysis Sandbox</h3>
+                <p>Created an isolated sandbox to analyze malware behavior & extract IOCs.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="glass">
+        <h2>Contact</h2>
+        <p style="text-align:center;">Let’s connect and build something secure together.</p>
+
+        <p style="text-align:center;">
+            📧 Email: <a href="mailto:alagappan@gmail.com" style="color:#00eaff;">alagappan@gmail.com</a><br>
+            🔗 LinkedIn: <a href="#" style="color:#00eaff;">linkedin.com/in/alagappan</a><br>
+            💼 GitHub: <a href="#" style="color:#00eaff;">github.com/alagappan</a>
+        </p>
+    </div>
+</section>
+
+<footer>
+    © 2025 Alagappan — Cybersecurity Portfolio
+</footer>
+
+</body>
+</html>
